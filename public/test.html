@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>MiddlwareIoT</title>
+</head>
+<body ng-app="dashboard">
+<h1>Dashboard</h1>
+<div id = "wrapper" ng-controller="dashboardCtrl">
+  <button ng-click = "reload()">Reload</button>
+  <div id = "first">
+  <table style = "width : 270px">
+    <tr>
+      <th>New Values</th>
+    </tr>
+    <tr ng-repeat="v in data">
+      <td>{{v.newValue}}</td>
+    </tr>
+  </table>
+</div>
+<div class="second">
+  <table>
+    <tr>
+      <th>id</th>
+      <th>topic</th>
+      <th>Value</th>
+    </tr>
+    <tr ng-repeat="value in values">
+      <td>{{value._id}}</td>
+      <td>/topic/values</td>
+      <td>{{value.payload}}</td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+<script src="./angular/angular.min.js"></script>
+<script src = "./module.js"></script>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /*width: 100%;*/
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#wrapper {
+    border: 1px ;
+    overflow: hidden;
+}
+#first {
+    width: 300px;
+    border: 1px ;
+    float : left;
+}
+#second {
+    border: 1px solid green;
+    float : right;
+}
+</style>

@@ -1,0 +1,26 @@
+{
+  "name": "middlwareiot",
+  "version": "1.0.0",
+  "description": "middlwareIot project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houssemjawa/middlwareIoT.git"
+  },
+  "author": "Jaouadi Houssem and El Mabrouk Asma 3AEL1 (IoT)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houssemjawa/middlwareIoT/issues"
+  },
+  "homepage": "https://github.com/houssemjawa/middlwareIoT#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "faye-websocket": "^0.11.1",
+    "mongoose": "^5.0.0-rc0",
+    "mqtt": "^2.15.0"
+  }
+}
