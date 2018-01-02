@@ -18,7 +18,7 @@ $ npm install -g node-red
 * **mqtt out** configure correctly connection with your mqtt brocker
 * **debug** (optional)
 ## Install and run
-You can clone or download this project and run it with this command :
+You can clone or download this project and run it with this commands :
 ```
 $ cd middlwareIoT
 $ node index.js
