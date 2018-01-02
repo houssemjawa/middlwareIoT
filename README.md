@@ -20,6 +20,6 @@ $ npm install -g node-red
 ## Install and run
 You can clone or download this project and run it with this command :
 ```
-$ cd middlware
+$ cd middlwareIoT
 $ node index.js
 ```
